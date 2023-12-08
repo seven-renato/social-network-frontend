@@ -353,7 +353,7 @@ export default function Home() {
                             <Alert message="Follows you" type="success" closable afterClose={handleClose} />
                         )}
                         <div className="flex flex-col justify-center items-center">
-                            <h1>Informações</h1>
+                            <h1>Information</h1>
                             <div className="mb-10">
                                 <Row gutter={30}>
                                     <Card title="Username" bordered={false}>

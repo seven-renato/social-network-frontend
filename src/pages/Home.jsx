@@ -187,6 +187,7 @@ export default function Home() {
                                 </>)}
                         </div>
                         <div className="flex flex-col justify-center items-center">
+                            <h1>Information</h1>
                             <div className="mb-10">
                                 <Row gutter={16}>
                                     <Card title="Username" bordered={false}>
@@ -204,7 +205,6 @@ export default function Home() {
                                 </Row>
                             </div>
                         </div>
-                        <h1>Information</h1>
                         <div className="flex flex-col justify-center items-center">
                             <h1>Relations</h1>
                             <div className="flex">
