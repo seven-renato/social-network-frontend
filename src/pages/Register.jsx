@@ -51,6 +51,7 @@ export default function Register() {
         registerRequest(values).then(response => {
             if(response.status == 200){
                 handleAlertMessage("success", "Usuário criado com sucesso.");
+                window.location.href = "/login";
             } else {
                 handleAlertMessage("error", "Algo de errado aconteceu com a sua tentativa de cadastro.");
             }
