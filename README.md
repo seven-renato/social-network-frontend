@@ -1,5 +1,9 @@
 # Aplicação de Rede Social - Frontend com React JS
 
+## Criadores do Projeto
+# Paulo Renato Neto - https://github.com/seven-renato/
+# Nairo Elsner - https://github.com/nairoelsner/
+
 ## Descrição do Projeto
 
 Este projeto foi desenvolvido como parte do 4º bimestre da disciplina de Estruturas de Dados e Linguagens, ministrada pelo Prof. Dr. Eduardo Nunes Borges, na Universidade Federal do Rio Grande. O objetivo principal é implementar uma aplicação de rede social que simula operações de carga, manipulação e verificação de um conjunto de estruturas de dados em memória.
@@ -39,6 +43,9 @@ Acesse [url-social-network-graphs] para visualizar a aplicação no navegador.
 
 - React JS
 - Ant Design para Componentes
+
+## API com aplicação de estruturação em Python baseado POO
+https://github.com/nairoelsner/social-network
 
 ### Contribuição
 
