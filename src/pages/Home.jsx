@@ -25,7 +25,7 @@ export default function Home() {
     const [clientDataSource , setClientDataSource] = useState([]);
     const [clientsDataSource , setClientsDataSource] = useState([]);
     const [foundUsers , setFoundUsers] = useState([]);
-    
+    // Extract data from user
     useEffect(() => {
         const data = getUser(user.username).then(response => {
             if(response.status == 200) {
@@ -42,7 +42,7 @@ export default function Home() {
              }
         })
     }, [])
-    
+    // Sanitize extracted data  
     const sanitizeUserData = (data) => {
         setUserCurrentState(data)
         console.log(userCurrentState)
@@ -96,6 +96,7 @@ export default function Home() {
     const personAcquaintancesColumn = [{title: 'Acquaintances', dataIndex: 'acquaintances', key: 'acquaintances'}]
     const orgClientsColumn = [{title: 'Clients', dataIndex: 'clients', key: 'clients'}]
     
+    // Search function
     const [searched, setSearched] = useState(false);
     const onSearch = (value, _e, info) => {
         const data = {
@@ -110,7 +111,7 @@ export default function Home() {
         })
 
     };
-       
+    // Change name visibility   
     const [changeNameVisibility, setChangeNameVisibility] = useState();
     const handleChangeNameVisibilty = () => {
         changeInfoVisility({
@@ -122,7 +123,7 @@ export default function Home() {
             }
         })
     }
-    
+    // Change username visibility   
     const [changeUsernameVisibility , setChangeUsernameVisibility] = useState(true);
     const handleChangeUsernameVisibilty = () => {
         changeInfoVisility({
@@ -134,7 +135,7 @@ export default function Home() {
             }
         })
     }
-
+    // Change age visibility   
     const [changeAgeVisibility , setChangeAgeVisibility] = useState(true);
     const handleChangeAgeVisibilty = () => {
         changeInfoVisility({
@@ -146,6 +147,7 @@ export default function Home() {
             }
         })
     }
+    // Change followersQTY visibility   
     const [changeFollowersVisibility , setChangeFollowersVisibility] = useState(true); 
     const handleChangeFollowersVisibility = () => {
         changeInfoVisility({
@@ -161,8 +163,9 @@ export default function Home() {
 
     return (
         <>
+            {/* Wait for user data */}
             {userData === undefined ? "Carregando..." : (
-                
+                // Define if user is a person or an organization
                 (user.kind == "person" ? (
                     <>  
                         <div className="flex flex-col justify-center items-center text-4xl mb-10 mt-10">

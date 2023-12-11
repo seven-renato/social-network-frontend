@@ -12,7 +12,7 @@ const { Search } = Input;
 
 export default function Home() {
     // following, followers, acquaintances
-    const user = useSelector((state) => state.user.currentUser);
+    const user = useSelector((state) => state.user.currentUser); // User from redux
     const [currentUser, setCurrentUser] = useState();
     const [localDBUserConnections , setLocalDBUserConnections] = useState();
     
@@ -46,7 +46,8 @@ export default function Home() {
     
     useEffect(()=> {
     }, [currentUser])
-    
+
+    // Sanitize data from the api
     const sanitizeUserData = (data) => {
         setUserCurrentState(data);
         
@@ -84,7 +85,7 @@ export default function Home() {
     const personFriendColumn = [{title: 'Friends', dataIndex: 'friends', key: 'friends'}]
     const personAcquaintancesColumn = [{title: 'Acquaintances', dataIndex: 'acquaintances', key: 'acquaintances'}]
     const orgClientsColumn = [{title: 'Clients', dataIndex: 'clients', key: 'clients'}]
-    
+    // Get current User profile data
     const [searched, setSearched] = useState(false);
     const onSearch = (value, _e, info) => {
         const data = {
@@ -139,12 +140,12 @@ export default function Home() {
             }
         }
     }
-    
+    // Get connections from currentUser
     useEffect(()=> {
         viewRelations(localDBUserConnections);
     }, [localDBUserConnections])
     
-    
+    // Function to addRelation with 2 user
     const addRelation = (type) => {
         if(type == "follow") {
             createRelation({username1: user.username, username2: currentUser.username, type: "follow"}).then( response => {

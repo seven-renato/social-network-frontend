@@ -28,13 +28,14 @@ export default function Register() {
     const [alertMessage, setAlertMessage] = useState(""); // Mensagem;
     const [showAlertMessage, setShowAlertMessage] = useState(false); // Exibir ou não;
     const [typeAlertMessage, setTypeAlertMessage] = useState(''); // Tipo da mensagem: success, error, warning ou info;
+    // Alert message for register
     const handleAlertMessage = (type, message) => {
         setShowAlertMessage(true);
         setAlertMessage(message);
         setTypeAlertMessage(type);
         setTimeout(() => { setShowAlertMessage(false) }, 7000); // Fechar a mensagem;
     };
-
+    // Select for user type
     const [userType, setUserType] = useState("")
     const handleChange = (value) => {
         if (value === "organization") {
@@ -43,7 +44,7 @@ export default function Register() {
             setUserType("person")
         }
     };
-
+    // Submit the form register user
     const onFinish = (values) => {
         if (userType === "") {
             return 

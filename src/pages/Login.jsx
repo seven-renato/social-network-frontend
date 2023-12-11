@@ -21,6 +21,7 @@ export default function Login() {
   const [alertMessage, setAlertMessage] = useState(""); // Mensagem;
   const [showAlertMessage, setShowAlertMessage] = useState(false); // Exibir ou não;
   const [typeAlertMessage, setTypeAlertMessage] = useState(''); // Tipo da mensagem: success, error, warning ou info;
+  // Alert message for login
   const handleAlertMessage = (type, message) => {
       setShowAlertMessage(true);
       setAlertMessage(message);
@@ -31,7 +32,12 @@ export default function Login() {
   const navigate = useNavigate();
 
   const dispatchLogin = useDispatch();
-
+  /**
+   * Executes the onFinish function when form values are submitted.
+   *
+   * @param {object} values - The values submitted from the form.
+   * User Login function
+   */
   const onFinish = (values) => {
     loginRequest(values).then(response => {
       if(response.status == 200) {
@@ -59,7 +65,7 @@ export default function Login() {
           rules={[
             {
               required: true,
-              message: 'Por favor insira o seu Username!',
+              message: 'Please insert your Username!',
             },
           ]}
         >
@@ -70,7 +76,7 @@ export default function Login() {
           <Button type="primary" htmlType="submit" className="login-form-button">
             Login
           </Button>
-          &nbsp; ou <Link to="/register"> Registrar </Link>
+          &nbsp; ou <Link to="/register"> Register </Link>
           
         </Form.Item>
       </Form>
