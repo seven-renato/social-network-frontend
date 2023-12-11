@@ -1,56 +1,56 @@
-# Aplicação de Rede Social - Frontend com React JS
+# Social Network Application - Frontend with React JS
 
-## Criadores do Projeto
-# Paulo Renato Neto - https://github.com/seven-renato/
-# Nairo Elsner - https://github.com/nairoelsner/
+## Project Creators
+- Paulo Renato Neto - [GitHub](https://github.com/seven-renato/)
+- Nairo Elsner - [GitHub](https://github.com/nairoelsner/)
 
-## Descrição do Projeto
+## Project Description
 
-Este projeto foi desenvolvido como parte do 4º bimestre da disciplina de Estruturas de Dados e Linguagens, ministrada pelo Prof. Dr. Eduardo Nunes Borges, na Universidade Federal do Rio Grande. O objetivo principal é implementar uma aplicação de rede social que simula operações de carga, manipulação e verificação de um conjunto de estruturas de dados em memória.
+This project was developed as part of the 4th semester of the Data Structures and Languages course, taught by Prof. Dr. Eduardo Nunes Borges, at the Federal University of Rio Grande. The main goal is to implement a social network application that simulates loading, manipulation, and verification operations of a set of in-memory data structures.
 
-## Requisitos Funcionais
+## Functional Requirements
 
-A aplicação atende os seguintes requisitos funcionais:
+The application meets the following functional requirements:
 
-- Pessoas ou organizações podem criar perfis na rede e são usuários da aplicação.
-- Pessoas podem escolher manter certas informações do perfil privadas.
-- Pessoas podem se relacionar com outras pessoas de diferentes formas: amizade (bidirecional), família (bidirecional) ou conhecido (unidirecional).
-- Pessoas ou organizações podem ser clientes de organizações.
-- Usuários podem buscar por Pessoas ou Organizações por quaisquer das informações registradas nos perfis. A busca deve ser realizada por níveis, ou seja, primeiro naquelas conectadas ao usuário e depois nas conectadas aos conectados e assim por diante.
-- Deve ser possível visualizar o grafo da rede social com centro no usuário, com pelo menos dois níveis.
+- Individuals or organizations can create profiles on the network and are users of the application.
+- Individuals can choose to keep certain profile information private.
+- Individuals can relate to other individuals in different ways: friendship (bidirectional), family (bidirectional), or acquaintance (unidirectional).
+- Individuals or organizations can be clients of other organizations.
+- Users can search for individuals or organizations based on any information recorded in the profiles. The search should be performed in levels, meaning first those connected to the user and then those connected to the connected ones and so on.
+- It should be possible to visualize the social network graph centered on the user, with at least two levels.
 
-## Requisitos Não Funcionais
+## Non-functional Requirements
 
-- A aplicação deve ter uma interface gráfica para executar todas as funcionalidades.
-- A interface pode ser desktop dependente de sistema operacional ou Web.
+- The application must have a graphical interface to perform all functionalities.
+- The interface can be desktop-dependent on the operating system or web-based.
 
-## Instruções para o Frontend
+## Instructions for the Frontend
 
-Este diretório contém o código-fonte do frontend da aplicação desenvolvido com React JS e Ant Design.
+This directory contains the source code for the frontend of the application developed with React JS and Ant Design.
 
-### Execução
+### Execution
 
-Acesse [url-social-network-graphs] para visualizar a aplicação no navegador.
+Visit [social-network-graphs-url] to view the application in the browser.
 
-### Estrutura do Projeto
+### Project Structure
 
-- `src/`: Contém o código-fonte da aplicação.
-- `public/`: Contém arquivos públicos, como o HTML principal.
-- `src/pages`: Contém todas as páginas presentes no projeto, Home, Login, Profile e Register, dentro de cada uma na branch "documentation" existe a explicação de cada método e suas funcionalidades.
-- `src/components`: Existem os componentes referentes a representação de visualização do grafo da rede social com centro do usuário, com pelo menos dois níveis, através da BUSCA POR LARGURA.
+- `src/`: Contains the source code of the application.
+- `public/`: Contains public files, such as the main HTML.
+- `src/pages`: Contains all pages in the project, including Home, Login, Profile, and Register. In each one, in the "documentation" branch, there is an explanation of each method and its functionalities.
+- `src/components`: Contains components related to the visualization of the social network graph centered on the user, with at least two levels, using BREADTH-FIRST SEARCH.
 
-### Tecnologias Utilizadas
+### Technologies Used
 
 - React JS
-- Ant Design para Componentes
+- Ant Design for Components
 
-## API com aplicação de estruturação em Python baseado POO
+## API with Flask Application for Social Network based on OOP and Graph Utilization
 https://github.com/nairoelsner/social-network
 
-### Contribuição
+### Contribution
 
-Sinta-se à vontade para contribuir com melhorias no código ou correções de bugs. Abra uma [issue](https://github.com/seu-usuario/nome-do-repositorio/issues) para discutir grandes alterações.
+Feel free to contribute to code improvements or bug fixes. Open an [issue](https://github.com/seu-usuario/nome-do-repositorio/issues) to discuss major changes.
 
-### Licença
+### License
 
-Este projeto é distribuído sob a licença [MIT](https://opensource.org/licenses/MIT). Consulte o arquivo `LICENSE` para obter detalhes.
+This project is distributed under the [MIT license](https://opensource.org/licenses/MIT). Refer to the `LICENSE` file for details.
